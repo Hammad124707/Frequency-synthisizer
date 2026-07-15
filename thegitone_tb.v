@@ -8,11 +8,12 @@ module tbnco;
     reg  rst;
     wire code_tick;
 
+//remember that its ps, port (signal ).
     
-    code_nco uut (
+    code uut (
         .clk(clk),
-        .rst(rst),
-        .code_tick(code_tick)
+        .reset(rst),
+        .pulse(code_tick)
     );
 
     
